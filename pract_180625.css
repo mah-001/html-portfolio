@@ -1,0 +1,352 @@
+html {
+background-color: aquamarine;
+}
+
+header {
+    margin-left: 10px;
+}
+
+header h1 {
+    color: blueviolet;
+    margin: 0;
+    padding-top: 10px;
+    font-size: large;
+    font-weight: 87%;
+}
+
+header p {
+    color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV*/
+nav.listing {
+    margin-top: 5px;
+    padding-top: 10px;
+    
+}
+
+nav.listing ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav.listing a {
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid black;
+    border-bottom: 0;
+    display: block  
+}
+
+.listing_down a {
+    color: white
+}
+
+nav.listing li {
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+    background-color: rgb(132, 181, 224);
+    box-sizing: border-box;
+}
+
+nav.listing li:hover {
+    background-color: rgb(86, 86, 177);
+}
+
+@media screen and (max-width: 800px) {
+    nav.listing a {
+       padding: 2px 2px ;
+        
+    }
+}
+
+
+/*Nav */
+
+/*sprite*/
+
+header {
+    position: relative;
+}
+
+nav.sprite_1 ul {
+    padding:0%;
+    margin: 0%;
+}
+
+.colours {
+    position: absolute;
+    right: 100px;
+    bottom: 20px;  
+}
+
+.colours li {
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+}    
+
+.colours li a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+.colours li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(photo/image_50px.jpg);
+    text-indent: -9999px;
+}
+
+.colours .yellow a {
+    background-position: 0 -50px;
+}
+
+.colours .green a {
+    background-position: 0 -90px;
+}
+
+.colours .red a:hover {
+    background-position: -50px 0px;
+}
+
+.colours .yellow a:hover {
+    background-position: -50px -50px;
+}
+
+.colours .green a:hover {
+    background-position: -50px -90px;
+}
+
+nav.sprite1 {
+    margin: 0%;
+    padding: 0;
+}
+
+@media screen and (max-width:800px) {
+    nav.sprite_1 {
+        padding: 2px 2px;
+    }
+
+    .colours {
+    position: absolute;
+    right: 0px;
+    bottom: 20px;  
+}
+}
+
+img {
+    width: 100%;
+}
+
+/*sprite*/
+
+/*Table*/
+table {
+    margin-top: 30px;
+    padding: 15px 15px;
+    width: 100%;
+    background-color: rgb(130, 189, 189);
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+thead tr th:nth-child(1) {
+    text-align: left;
+    padding: 3px;
+}
+
+tbody tr td:nth-child(2),
+tbody tr td:nth-child(3),
+tbody tr td:nth-child(4) {
+    text-align: center;
+}
+
+tbody tr td:nth-child(1) {
+    padding-left: 5px;
+}
+
+
+thead th, 
+tbody td {
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color:aliceblue;
+}
+
+thead th:nth-child(1),
+thead th:nth-child(2) {
+    width:30%;
+}
+
+thead th:nth-child(3),
+thead th:nth-child(4) {
+    width:20%;
+}
+
+
+/*Table*/
+
+/*form*/
+form {
+    margin-top: 30px;
+    background-color: orange;
+    box-sizing: border-box;
+    display: block; 
+    padding: 30px 20px;
+}
+
+input[type="email"],
+input[type="text"]{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="submit"] {
+    border: 2px solid green;
+    outline: none;
+}
+
+
+select {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+}
+
+
+.hidden {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/*form*/
+
+
+.container {
+    max-width: 1400px;
+    background-color:antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Total_containt {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.main_containt {
+    width: 60%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    .main_containt {
+        width: auto;
+        float: none;
+    }   
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+
+.sidebar {
+    width: 40%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        width: auto;
+        float: none;
+    }   
+}
+
+.sidebar1 {
+    background-color: rgb(179, 126, 126);
+    padding: 10px 10px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner_containt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(100, 200, 10, 0.65);
+    box-sizing: border-box;
+    padding: 10px 10px;
+}
+
+@media screen and (max-width: 800px) {
+    img {
+        width: auto;
+    }   
+
+}
+
+@media screen and (max-width: 800px) {
+     .banner_containt {
+        content-visibility: hidden;
+    }
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+.group:before,
+.group:after{
+    content: "";
+    display: table;
+}
+
+.group:after{
+    clear: both;
+}
+
+.group{
+    zoom: 1;
+
+}
+
